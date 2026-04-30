@@ -102,33 +102,7 @@
 
 </div>
 
-<script>
-const ctx = document.getElementById('mainChart');
 
-new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: [
-            'Тривалість життя',
-            'Дитяча смертність',
-            'R&D',
-            'Відновлювана енергія',
-            'Зерно/особу',
-            'Нерівність'
-        ],
-        datasets: [{
-            label: 'Рівень показників',
-            data: [84, 1.8, 3.27, 6.7, 0.09, 9.8]
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: { display: false }
-        }
-    }
-});
-</script>
 
 </body>
 </html>
