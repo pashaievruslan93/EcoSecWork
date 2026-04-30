@@ -2,107 +2,152 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>Аналітичний звіт (Японія)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Аналітичний звіт</title>
 
 <link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
 
-<header>
-    <h1>Аналітичний звіт</h1>
-    <p>Економічна безпека Японії</p>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">РП</a>
+    <nav class="nav">
+      <a href="index.html">Про мене</a>
+      <a href="resume.html">Резюме</a>
+      <a class="active" href="report.html">Аналітичний звіт</a>
+    </nav>
+  </div>
 </header>
 
-<div class="card">
+<main class="container">
 
-<h2>📊 Ключові показники</h2>
+<section class="card page-title">
+  <p class="eyebrow">Аналітична частина</p>
+  <h1>Аналітичний звіт</h1>
+  <p>Економічна безпека Японії</p>
+</section>
 
-<canvas id="mainChart"></canvas>
+<!-- КЛЮЧОВІ ПОКАЗНИКИ -->
+<section class="card metrics">
+  <h2>📊 Ключові показники</h2>
+  <p class="desc">
+    Нижче наведено аналіз основних показників економічної безпеки Японії за останнє десятиліття.
+  </p>
 
-<p class="desc">
-Основні показники демонструють високий рівень розвитку Японії, проте існують критичні проблеми у сфері продовольства та соціальної нерівності.
-</p>
+  <div class="metrics-grid">
 
-<hr>
+    <div class="metric good">
+      <h3>Тривалість життя</h3>
+      <p><b>84,15 років</b></p>
+      <span>оптимальний рівень</span>
+    </div>
 
-<h2>⚠️ Основні загрози</h2>
+    <div class="metric good">
+      <h3>Дитяча смертність</h3>
+      <p><b>1,86‰</b></p>
+      <span>оптимальний рівень</span>
+    </div>
 
-<div class="grid">
+    <div class="metric good">
+      <h3>R&D</h3>
+      <p><b>3,27% ВВП</b></p>
+      <span>оптимальний рівень</span>
+    </div>
 
-<div class="box danger">
-<h3>1. Продовольча залежність</h3>
-<p>0,094 т зерна на особу — рівень абсолютної небезпеки.</p>
-</div>
+    <div class="metric good">
+      <h3>Відновлювана енергія</h3>
+      <p><b>6,72%</b></p>
+      <span>оптимальний рівень</span>
+    </div>
 
-<div class="box danger">
-<h3>2. Соціальна нерівність</h3>
-<p>Децильний коефіцієнт 9,88 — критичний показник.</p>
-</div>
+    <div class="metric danger">
+      <h3>Зерно на особу</h3>
+      <p><b>0,094 т</b></p>
+      <span>абсолютна небезпека</span>
+    </div>
 
-<div class="box danger">
-<h3>3. Зовнішня торгівля</h3>
-<p>Зниження покриття імпорту експортом.</p>
-</div>
+    <div class="metric danger">
+      <h3>Нерівність доходів</h3>
+      <p><b>9,88</b></p>
+      <span>абсолютна небезпека</span>
+    </div>
 
-<div class="box danger">
-<h3>4. Демографічний фактор</h3>
-<p>Скорочення населення впливає на економіку.</p>
-</div>
+  </div>
+</section>
 
-<div class="box danger">
-<h3>5. Платіжний баланс</h3>
-<p>Нестабільна динаміка та ризики.</p>
-</div>
+<!-- ЗАГРОЗИ -->
+<section class="card">
+  <h2>⚠️ Основні загрози</h2>
 
-</div>
+  <div class="grid">
+    <div class="box danger">
+      <h3>1. Продовольча залежність</h3>
+      <p>Низьке виробництво зерна на особу.</p>
+    </div>
 
-<hr>
+    <div class="box danger">
+      <h3>2. Соціальна нерівність</h3>
+      <p>Великий розрив між доходами населення.</p>
+    </div>
 
-<h2>✅ Рекомендації</h2>
+    <div class="box danger">
+      <h3>3. Зовнішня торгівля</h3>
+      <p>Погіршення балансу імпорту та експорту.</p>
+    </div>
 
-<div class="grid">
+    <div class="box danger">
+      <h3>4. Демографія</h3>
+      <p>Скорочення населення.</p>
+    </div>
 
-<div class="box good">
-<h3>1. Розвиток агросектору</h3>
-<p>Інвестиції у технології та підвищення врожайності.</p>
-</div>
+    <div class="box danger">
+      <h3>5. Платіжний баланс</h3>
+      <p>Нестабільна динаміка.</p>
+    </div>
+  </div>
+</section>
 
-<div class="box good">
-<h3>2. Зменшення нерівності</h3>
-<p>Соціальні програми та податкова реформа.</p>
-</div>
+<!-- РЕКОМЕНДАЦІЇ -->
+<section class="card">
+  <h2>✅ Рекомендації</h2>
 
-<div class="box good">
-<h3>3. Підтримка експорту</h3>
-<p>Розширення ринків та стимулювання виробництва.</p>
-</div>
+  <div class="grid">
+    <div class="box good">
+      <h3>1. Розвиток агросектору</h3>
+    </div>
 
-<div class="box good">
-<h3>4. Продовольча безпека</h3>
-<p>Створення резервів та імпортозаміщення.</p>
-</div>
+    <div class="box good">
+      <h3>2. Зменшення нерівності</h3>
+    </div>
 
-<div class="box good">
-<h3>5. Макроекономічна стабільність</h3>
-<p>Контроль платіжного балансу та боргу.</p>
-</div>
+    <div class="box good">
+      <h3>3. Підтримка експорту</h3>
+    </div>
 
-</div>
+    <div class="box good">
+      <h3>4. Продовольча безпека</h3>
+    </div>
 
-<hr>
+    <div class="box good">
+      <h3>5. Стабілізація економіки</h3>
+    </div>
+  </div>
+</section>
 
-<h2>📈 Висновок</h2>
-<p>
-Японія є високорозвиненою країною з сильним людським капіталом,
-але має критичні ризики у сфері продовольства та соціальної структури.
-</p>
+<!-- ВИСНОВОК -->
+<section class="card summary">
+  <h2>📈 Висновок</h2>
+  <p>
+    Японія має високий рівень розвитку, проте існують значні ризики у сфері продовольства та соціальної нерівності.
+  </p>
+</section>
 
-</div>
+</main>
 
-
+<footer class="footer">© 2026 Руслан Пашаєв</footer>
 
 </body>
 </html>
