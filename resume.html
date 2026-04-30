@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Руслан Пашаєв — Резюме</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Руслан Пашаєв | Резюме</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">РП</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Головна навігація">
         <a href="index.html">Про мене</a>
         <a class="active" href="resume.html">Резюме</a>
         <a href="report.html">Аналітичний звіт</a>
@@ -18,18 +18,20 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="card page-title">
+  <main class="container page">
+    <section class="page-title card">
       <p class="eyebrow">Друга сторінка</p>
       <h1>Резюме</h1>
-      <p>На цій сторінці розміщено PDF-файл з резюме.</p>
+      <p>На цій сторінці розміщено резюме у форматі PDF.</p>
     </section>
 
     <section class="pdf-card">
-      <iframe src="assets/cv-pashaiev-12-2025.pdf" title="CV Pashaiev 12.2025"></iframe>
+      <iframe src="assets/resume.pdf" title="Резюме Руслана Пашаєва"></iframe>
     </section>
   </main>
 
-  <footer class="footer">© 2026 Руслан Пашаєв</footer>
+  <footer class="footer">
+    <div class="container">© 2026 Руслан Пашаєв</div>
+  </footer>
 </body>
 </html>
