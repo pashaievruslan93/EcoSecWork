@@ -261,7 +261,9 @@ font-size: 20px;
 margin: 0;
 }
 
+
 .metric span {
 font-size: 13px;
 color: var(--muted);
 }
+/* fix */
