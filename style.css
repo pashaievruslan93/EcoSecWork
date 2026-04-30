@@ -267,3 +267,11 @@ font-size: 13px;
 color: var(--muted);
 }
 /* fix */
+
+.metric.good {
+border-left: 6px solid #16a34a;
+}
+
+.metric.danger {
+border-left: 6px solid #ef4444;
+}
